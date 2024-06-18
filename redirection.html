@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection avec URL Scheme</title>
+</head>
+<body>
+    <h1>Redirection en cours...</h1>
+    <script type="text/javascript">
+        // Tentative de redirection immédiate vers l'application
+        window.location.href = "commhsnapsalesdev://";
+
+        // Optionnel : après un court délai, rediriger vers une page alternative
+        setTimeout(function() {
+            window.location.href = "commhsnapsalesdev://";
+        }, 1000);  // 1 seconde de délai avant la redirection alternative
+    </script>
+</body>
+</html>
